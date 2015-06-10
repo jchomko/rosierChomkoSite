@@ -1,0 +1,17 @@
+
+.about_text{
+	background-color: red;
+}
+
+.project_title{
+	background-color: green;
+}
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
