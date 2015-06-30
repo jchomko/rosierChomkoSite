@@ -23,14 +23,16 @@ div{
 
 }
 
-.about_text p{
-	display: inline-block;
+.about_text span{
+
+	/*display: inline-block;*/
 	background-color: white;
 	opacity: 1;
 	
 }
 
 .summary_text{
+
 	background:transparent;
 	overflow:hidden;
     display: inline-block;
@@ -41,9 +43,9 @@ div{
 	max-width: 750px;
 }
 
-.summary_text p{
+.summary_text span{
 
-	display: inline-block;
+	/*display: inline-block;*/
 	background-color: white;
 	opacity: 1;
 
@@ -79,11 +81,11 @@ a{
 		
 		background:transparent;
 		overflow:hidden;
-	    margin:16px;
+	    margin:20px;
 		display: inline-block;
 		height:auto;
 		
-		font-size: 14pt;
+		font-size: 16pt;
 		max-width: 80%;
 		max-width: 750px;
 	}
