@@ -8,44 +8,69 @@ div{
 	background-color: white;
 }
 
-	.about_text{
-		
-		background:transparent;
-		overflow:hidden;
-	    margin:20px;
-		display: inline-block;
-		height:auto;
-		
-		font-size: 14pt;
-		max-width: 80%;
-		max-width: 750px;
-	}
+.about_text{
+	
+	background:transparent;
+	overflow:hidden;
+    margin:20px;
+	display: inline-block;
+	height:auto;
+	
+	font-size: 16pt;
+	max-width: 80%;
+	max-width: 750px;
 
-	.about_text p{
-		
-		display: inline-block;
-		background-color: white;
-		opacity: 0.7;
 
-	}
+}
 
-	.project_title{
-		background-color: green;
+.about_text p{
+	display: inline-block;
+	background-color: white;
+	opacity: 1;
+	
+}
 
-	}
+.summary_text{
+	background:transparent;
+	overflow:hidden;
+    display: inline-block;
+	height:auto;
+	
+	font-size: 16pt;
+	max-width: 80%;
+	max-width: 750px;
+}
 
-	.project_link{
-		background-color: pink;
-	}
+.summary_text p{
 
-	body {
-	   
-	}
+	display: inline-block;
+	background-color: white;
+	opacity: 1;
 
-	h1 {
-	    color: navy;
-	    margin-left: 20px;
-	}
+}
+
+.project_title{
+	background-color: green;
+
+}
+
+.project_link{
+	background-color: pink;
+}
+
+body {
+   
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+a{
+	color: gray;
+
+}
 
 
 /*if less than 960 ie a phone*/
@@ -54,7 +79,7 @@ div{
 		
 		background:transparent;
 		overflow:hidden;
-	    margin:20px;
+	    margin:16px;
 		display: inline-block;
 		height:auto;
 		
@@ -77,7 +102,7 @@ div{
 		display: inline-block;
 		height:auto;
 		
-		font-size: 20pt;
+		font-size: 16pt;
 		max-width: 80%;
 		max-width: 750px;
 	}
