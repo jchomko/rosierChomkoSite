@@ -1,21 +1,126 @@
-
-.about_text{
-	background-color: red;
+html{
+	background: url(images/image2.jpg) no-repeat center center fixed;
+	background-size: cover;
 }
 
-.project_title{
-	background-color: green;
+div{
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
 }
 
-.project_link{
-	background-color: pink;
+	.about_text{
+		
+		background:transparent;
+		overflow:hidden;
+	    margin:20px;
+		display: inline-block;
+		height:auto;
+		
+		font-size: 14pt;
+		max-width: 80%;
+		max-width: 750px;
+	}
+
+	.about_text p{
+		
+		display: inline-block;
+		background-color: white;
+		opacity: 0.7;
+
+	}
+
+	.project_title{
+		background-color: green;
+
+	}
+
+	.project_link{
+		background-color: pink;
+	}
+
+	body {
+	   
+	}
+
+	h1 {
+	    color: navy;
+	    margin-left: 20px;
+	}
+
+
+/*if less than 960 ie a phone*/
+@media (max-width:960px){
+	.about_text{
+		
+		background:transparent;
+		overflow:hidden;
+	    margin:20px;
+		display: inline-block;
+		height:auto;
+		
+		font-size: 14pt;
+		max-width: 80%;
+		max-width: 750px;
+	}
+
+	
+
 }
 
-body {
-    background-color: lightblue;
-}
+/*greater than a 960*/
+@media (min-width:960px){
+	.about_text{
+		
+		background:transparent;
+		overflow:hidden;
+	    margin:20px;
+		display: inline-block;
+		height:auto;
+		
+		font-size: 20pt;
+		max-width: 80%;
+		max-width: 750px;
+	}
 
-h1 {
-    color: navy;
-    margin-left: 20px;
+
+
+/*	.about_text{
+		
+		background:transparent;
+		overflow:hidden;
+	    margin:20px;
+		display: inline-block;
+		height:auto;
+		
+		font-size: 18pt;
+		max-width: 80%;
+		max-width: 750px;
+	}
+
+	.about_text p{
+		
+		display: inline-block;
+		background-color: white;
+		opacity: 0.7;
+
+	}
+
+	.project_title{
+		background-color: green;
+
+	}
+
+	.project_link{
+		background-color: pink;
+	}
+
+	body {
+	   
+	}
+
+	h1 {
+	    color: navy;
+	    margin-left: 20px;
+	}*/
+
 }
