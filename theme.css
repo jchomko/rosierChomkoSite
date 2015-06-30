@@ -1,6 +1,9 @@
 html{
-	background: url(images/image2.JPG) no-repeat center center fixed;
+
+	/*background: url(images/image2.JPG) no-repeat center center fixed;
 	background-size: cover;
+	*/
+	background: #1C1C1C;
 }
 
 div{
@@ -26,7 +29,8 @@ div{
 .about_text span{
 
 	/*display: inline-block;*/
-	background-color: white;
+	/*background-color: white;*/
+	color:white;
 	opacity: 1;
 	
 }
@@ -46,7 +50,7 @@ div{
 .summary_text span{
 
 	/*display: inline-block;*/
-	background-color: white;
+	/*background-color: white;*/
 	opacity: 1;
 
 }
