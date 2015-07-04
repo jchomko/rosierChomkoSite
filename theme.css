@@ -78,6 +78,29 @@ a{
 
 }
 
+ul {
+    list-style-type: none;
+    background:transparent;
+	overflow:hidden;
+    margin:0px;
+	display: inline-block;
+	height:auto;
+	
+	padding: 0;
+	
+	font-size: 16pt;
+	max-width: 80%;
+	max-width: 750px;
+	
+	color:white
+	opacity: 1;
+	
+	a{
+	color: gray;
+	
+
+}
+
 
 /*if less than 960 ie a phone*/
 @media (max-width:960px){
@@ -93,7 +116,29 @@ a{
 		max-width: 80%;
 		max-width: 750px;
 	}
+	
 
+ul {
+    list-style-type: none;
+    background:transparent;
+	overflow:hidden;
+    margin:0px;
+	display: inline-block;
+	height:auto;
+	
+	padding: 0;
+	
+	font-size: 16pt;
+	max-width: 80%;
+	max-width: 750px;
+	
+	color:white;
+	opacity: 1;
+	
+	a{
+	color: gray;
+
+}
 	
 
 }
@@ -113,7 +158,33 @@ a{
 		max-width: 750px;
 	}
 
+ul {
+    list-style-type: none;
+    background:transparent;
+	overflow:hidden;
+    margin:0px;
+	display: inline-block;
+	height:auto;
+	
+	padding: 0;
+	
+	font-size: 16pt;
+	max-width: 80%;
+	max-width: 750px;
+	
+	color:white;
+	opacity: 1;
+	
+	a{
+	color: gray;
+	
 
+}
+
+}
+
+	
+	
 
 /*	.about_text{
 		
