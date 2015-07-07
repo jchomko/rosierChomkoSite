@@ -6,6 +6,11 @@ html{
 	background: #1C1C1C;
 }
 
+body {
+	background-size: cover;
+ /*background-color:#111111;   */
+}
+
 div{
 	font-family: 'Roboto', sans-serif;
 	background-color: white;
@@ -18,11 +23,9 @@ div{
     margin:20px;
 	display: inline-block;
 	height:auto;
-	
-	font-size: 16pt;
 	max-width: 80%;
 	max-width: 750px;
-
+	
 
 }
 
@@ -30,6 +33,7 @@ div{
 
 	/*display: inline-block;*/
 	/*background-color: white;*/
+	font-variant: light;
 	color:white;
 	opacity: 1;
 	
@@ -41,16 +45,63 @@ div{
 	overflow:hidden;
     display: inline-block;
 	height:auto;
-	
-	font-size: 16pt;
+	font-size: 14pt;
 	max-width: 80%;
 	max-width: 750px;
 }
 
+
+
+.toggle_frame{
+	text-align: left;
+	background:transparent;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin:0px;
+	padding-bottom: 0px;
+	padding:20px;
+
+}
+.toggle{
+	display: inline-block;
+
+	border: none;
+	color: white;
+	cursor: pointer;
+	
+	background-color: transparent;
+	/*text-decoration: underline;*/
+	outline: none;
+	font-size: 14pt;
+	opacity: 0.6;
+}
+
+.active { 
+	color:white;
+	opacity: 1.0;
+	/*text-decoration: line-through;*/
+
+}
+
+
+/*.active {
+    position: relative;
+}
+.active::after {
+    border-bottom: 5px solid red;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+*/
 .summary_text span{
 
 	/*display: inline-block;*/
 	/*background-color: white;*/
+	font-size: 14pt;
 	opacity: 1;
 
 }
@@ -62,6 +113,22 @@ div{
 
 .project_link{
 	background-color: pink;
+}
+
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: auto;
+  height: 100%;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 body {
@@ -78,28 +145,7 @@ a{
 
 }
 
-ul {
-    list-style-type: none;
-    background:transparent;
-	overflow:hidden;
-    margin:0px;
-	display: inline-block;
-	height:auto;
-	
-	padding: 0;
-	
-	font-size: 16pt;
-	max-width: 80%;
-	max-width: 750px;
-	
-	color:white
-	opacity: 1;
-	
-	a{
-	color: gray;
-	
 
-}
 
 
 /*if less than 960 ie a phone*/
@@ -118,28 +164,6 @@ ul {
 	}
 	
 
-ul {
-    list-style-type: none;
-    background:transparent;
-	overflow:hidden;
-    margin:0px;
-	display: inline-block;
-	height:auto;
-	
-	padding: 0;
-	
-	font-size: 16pt;
-	max-width: 80%;
-	max-width: 750px;
-	
-	color:white;
-	opacity: 1;
-	
-	a{
-	color: gray;
-
-}
-	
 
 }
 
@@ -158,28 +182,7 @@ ul {
 		max-width: 750px;
 	}
 
-ul {
-    list-style-type: none;
-    background:transparent;
-	overflow:hidden;
-    margin:0px;
-	display: inline-block;
-	height:auto;
-	
-	padding: 0;
-	
-	font-size: 16pt;
-	max-width: 80%;
-	max-width: 750px;
-	
-	color:white;
-	opacity: 1;
-	
-	a{
-	color: gray;
-	
 
-}
 
 }
 
