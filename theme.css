@@ -4,6 +4,7 @@ html{
 	background-size: cover;
 	*/
 	background: #1C1C1C;
+
 }
 
 body {
@@ -63,6 +64,7 @@ div{
 	padding:20px;
 
 }
+
 .toggle{
 	display: inline-block;
 
@@ -150,15 +152,32 @@ a{
 
 /*if less than 960 ie a phone*/
 @media (max-width:960px){
-	.about_text{
+
+	
+
+
+	.toggle{
+		display: inline-block;
+
+		border: none;
+		color: white;
+		cursor: pointer;
 		
+		background-color: transparent;
+		/*text-decoration: underline;*/
+		outline: none;
+		font-size: 20pt;
+		opacity: 0.6;
+	}
+
+	.about_text{
 		background:transparent;
 		overflow:hidden;
 	    margin:20px;
 		display: inline-block;
 		height:auto;
 		
-		font-size: 16pt;
+		font-size: 20pt;
 		max-width: 80%;
 		max-width: 750px;
 	}
