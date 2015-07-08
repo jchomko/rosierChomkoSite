@@ -181,6 +181,15 @@ a{
 		max-width: 80%;
 		max-width: 750px;
 	}
+
+	.summary_text span{
+
+	/*display: inline-block;*/
+	/*background-color: white;*/
+	font-size: 20pt;
+	opacity: 1;
+
+}
 	
 
 
