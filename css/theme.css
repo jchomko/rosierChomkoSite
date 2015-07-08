@@ -1,26 +1,81 @@
+
 html{
+	
+
+}
+.graybg{
+	background: #1C1C1C;
+}
+
+.heartbg{
+	
+	background: url(../images/heart-web.jpg) no-repeat center center fixed !important ;
+	-webkit-background-size: cover !important;
+	  -moz-background-size: cover !important;
+	  -o-background-size: cover !important; 
+	  background-size: cover !important;
+
+}
+.shadowingbg{
+	background-size: cover;
+	background: url(../images/shadowing-web.jpg) no-repeat center center fixed !important ;
+	 -webkit-background-size: cover !important;
+	  -moz-background-size: cover !important;
+	  -o-background-size: cover !important; 
+	  background-size: cover !important;
+}
+
+.storybg{
+	background-size: cover;
+	background: url(../images/story-web.jpg) no-repeat center center fixed !important ;
+	-webkit-background-size: cover !important;
+	  -moz-background-size: cover !important;
+	  -o-background-size: cover !important; 
+	  background-size: cover !important;
+}
+
+.colorsbg{
+	background-size: cover;
+	background: url(../images/colors-web.jpg) no-repeat center center fixed !important ;
+	-webkit-background-size: cover !important;
+	  -moz-background-size: cover !important;
+	  -o-background-size: cover !important; 
+	  background-size: cover !important;
+}
+
+.lillebg{
+	background-size: cover;
+	background: url(../images/lille-web.jpg) no-repeat center center fixed !important ;
+	-webkit-background-size: cover !important;
+	  -moz-background-size: cover !important;
+	  -o-background-size: cover !important; 
+	  background-size: cover !important;
+}
+
+/*html{*/
 
 	/*background: url(images/image2.JPG) no-repeat center center fixed;
 	background-size: cover;
 	*/
-	background: #1C1C1C;
+	
+	/*background: url(../images/heart-web.jpg) no-repeat center center fixed; */
+	/*  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+*/
 
-}
+
+
+
 
 @font-face {
-	font-family: 'Atlas Grotesk Web';
-	src: url('AtlasGrotesk-Regular-Web.eot');
-	src: url('AtlasGrotesk-Regular-Web.eot?#iefix') format('embedded-opentype'),
-	url('AtlasGrotesk-Regular-Web.woff') format('woff'),
-	url('AtlasGrotesk-Regular-Web.ttf') format('truetype'),
-	url('AtlasGrotesk-Regular-Web.svg#AtlasGrotesk-Regular') format('svg');
-	font-weight: 400;
-	font-style: normal;
-	font-stretch: normal;
-}
-
-.AtlasGrotesk-Regular-Web {
 font-family: 'Atlas Grotesk Web';
+src: url('AtlasGrotesk-Regular-Web.eot');
+src: url('AtlasGrotesk-Regular-Web.eot?#iefix') format('embedded-opentype'),
+url('AtlasGrotesk-Regular-Web.woff') format('woff'),
+url('AtlasGrotesk-Regular-Web.ttf') format('truetype'),
+url('AtlasGrotesk-Regular-Web.svg#AtlasGrotesk-Regular') format('svg');
 font-weight: 400;
 font-style: normal;
 font-stretch: normal;
@@ -32,8 +87,14 @@ body {
 }
 
 div{
-	font-family: 'Atlas Grotesk Web', serif;
+	font-family: 'Atlas Grotesk Web', sans-serif;
 	background-color: white;
+}
+span{
+	font-family: 'Atlas Grotesk Web', sans-serif;
+}
+ul{
+	font-family: 'Atlas Grotesk Web', sans-serif;
 }
 
 .about_text{
@@ -73,6 +134,7 @@ div{
 
 
 .toggle_frame{
+	font-family: 'Atlas Grotesk Web', sans-serif;
 	text-align: left;
 	background:transparent;
 	position: absolute;

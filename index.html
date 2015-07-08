@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html class = "base">
+<html id = "base" class ="graybg">
 
 
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="theme.css">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<!-- <link rel="stylesheet" type="text/css" href="1507-FUTDRF.css"> -->
 
 <body >
    
@@ -48,8 +49,19 @@
 
 
 <script>
-
     
+    var images = [
+      'images/black.png',
+      'images/heart-web.jpg',
+      'images/shadowing-web.jpg',
+      'images/story-web.jpg',
+      'images/colors-web.jpg',
+      'images/lille-web.jpg'];
+    
+      $(images).each(function() {
+           $('<img/>')[0].src = this; 
+      });
+      
     // strikthrough to indicate selected
      $('input[type=button]').click(function() {
         $('input[type=button]').removeClass('active');
@@ -58,50 +70,61 @@
 
 
       $("#about").click(function (e) {
-
+        e.preventDefault();
         $("#abs").html('We strive to be appropriate to the space and our users, and create experiences that go beyond screens, enabling people to engage with their environment and each other. Our first project <a href="https://www.youtube.com/watch?v=uZNmJ1ahFVM" target="_blank">Shadowing</a>, was nominated for a <a href="https://designmuseum.org/exhibitions/designs-of-the-year-2015"target="_blank">Design of the Year award</a>, and we are currently working on new objects and experiences.<p>');
-         $.backstretch({show:1});
+         // $.backstretch(images[0],{fade:750,duration:4000});
+          $('#base').removeClass().addClass('graybg');
+
       });
 
       $("#shadowing").click(function (e) {
-
+        e.preventDefault();
         $("#abs").text("Winner of Watersheds 2014 Playable City Award, Shadowing by Jonathan Chomko and Matthew Rosier gave memory to Bristol's city lights, enabling them to record and play back the shadows of those who passed underneath. Over six weeks in Autumn 2014, Bristol residents and visitors hunted out the clandestine locations of eight augmented street lights, and were playing, dancing and shaping their shadows in some of the unexpected and lesser-travelled streets and pathways of Bristol. ");
-       // $.backstretch("images/heart-web.jpg",{fade:240});
-       $.show(1);
+         $('#base').removeClass().addClass('shadowingbg');
+
       });
       
       $("#hok").click(function (e) {
+        e.preventDefault();
         $("#abs").text('Heart of a King is a prototype visitor experience created for Historic Royal Palaces, guiding visitors on the path that Charles the 1st walked before his execution.');
-        $.backstretch(img3,{fade:240});
+         $('#base').removeClass().addClass('heartbg');
+      
       });
 
       $("#story").click(function (e) {
+        e.preventDefault();
         $("#abs").text('Situated within Fabrica, this project aimed to observe how people used a machine that enabled people to anonymously post snippets of stories/personal ramblings in the knowledge that they would be printed and read by only one other.');
-        $.backstretch("images/story.jpg",{fade:240});
+         $('#base').removeClass().addClass('storybg');
+
       });
       
       $("#machine").click(function (e) {
+        e.preventDefault();
         $("#abs").text('Designed and built for the launch of COLORS #86 - Making the News, the COLORS News Machine churns your tweets through different media filters and into print, simulating the contemporary 24-hour news cycle. Tweet a headline to @colorsmachine and see what happens; after Italian news hoaxer Tommaso De Benedetti tweeted the (fake) death of Syrian President Bashar al-Assad in 2012, crude oil prices rose by US $1.17 on the New York Mercantile Exchange');
-        $.backstretch("images/news_machine.JPG",{fade:240});
+         $('#base').removeClass().addClass('colorsbg');
+
       });
 
        $("#lille").click(function (e) {
-        //e.preventDefault();
+        e.preventDefault();
         $("#abs").text('Over a five day workshop, competing schools/institutions were introduced to the three topics of the brief; re-inventing forgotten urban spaces, new modes of consumption and universal access to public services, as well as several sites across the city that had been earmarked for potential projects.');
-        $.backstretch("images/lille2.jpg",{fade:240});
+         $('#base').removeClass().addClass('lillebg');
+
+        $.backstretch("pause");
+
         // $("#toggle").csss("text-decoration", "line-through");
       });
 
 
-    $.backstretch([
-      "images/black.png",
-      "images/heart-web.jpg",
-      "images/shadowing-web.jpg",
-      "images/story-web.jpg",
-      "images/colors-web.jpg",
-      "images/lille-web.jpg",
-    ], {duration: 100000000000, fade: 240, paused: true});
+    //$('body').backstretch([
+      
 
+    //$('body').data('backstretch').pause();
+    //$.backstretch.pause();// = true; //"pause");
+
+
+
+    
 </script>
 
 <!-- <a class = "project_link" href="/project.html">Project One</a>
