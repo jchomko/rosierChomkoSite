@@ -83,7 +83,6 @@ div{
 	color:white;
 	opacity: 1.0;
 	/*text-decoration: line-through;*/
-
 }
 
 
@@ -148,63 +147,64 @@ a{
 }
 
 
-
-
 /*if less than 960 ie a phone*/
-@media (max-width:960px){
-
-	
-
-
-	.toggle{
-		display: inline-block;
-
-		border: none;
-		color: white;
-		cursor: pointer;
-		
-		background-color: transparent;
-		/*text-decoration: underline;*/
-		outline: none;
-		font-size: 20pt;
-		opacity: 0.6;
-	}
+@media (max-device-width:960px){
 
 	.about_text{
+
 		background:transparent;
 		overflow:hidden;
 	    margin:20px;
 		display: inline-block;
 		height:auto;
 		
-		font-size: 20pt;
+		font-size: 30pt;
 		max-width: 80%;
 		max-width: 750px;
 	}
 
+	.summary_text{
+
+	background:transparent;
+	overflow:hidden;
+    display: inline-block;
+	height:auto;
+	font-size: 40pt;
+	max-width: 80%;
+	max-width: 750px;
+}
 	.summary_text span{
 
 	/*display: inline-block;*/
 	/*background-color: white;*/
-	font-size: 20pt;
+	font-size: 40pt;
 	opacity: 1;
-
-}
 	
+	}
 
+	.toggle{
+		display: inline-block;
+		border: none;
+		color: white;
+		cursor: pointer;
+		background-color: transparent;
+		/*text-decoration: underline;*/
+		outline: none;
+		font-size: 40pt;
+		opacity: 0.6;
+	}
 
 }
 
 /*greater than a 960*/
-@media (min-width:960px){
+@media (min-device-width:960px){
+	
 	.about_text{
-		
 		background:transparent;
 		overflow:hidden;
 	    margin:20px;
 		display: inline-block;
 		height:auto;
-		
 		font-size: 16pt;
 		max-width: 80%;
 		max-width: 750px;

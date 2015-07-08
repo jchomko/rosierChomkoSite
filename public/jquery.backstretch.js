@@ -248,9 +248,9 @@
                           oldImage.remove();
 
                           // Resume the slideshow
-                          if (!self.paused) {
-                            self.cycle();
-                          }
+                          //if (!self.paused) {
+                           // self.cycle();
+                          //}
 
                           // Trigger the "after" and "show" events
                           // "show" is being deprecated

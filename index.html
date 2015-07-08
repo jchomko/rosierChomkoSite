@@ -48,6 +48,7 @@
 
 
 <script>
+
     
     // strikthrough to indicate selected
      $('input[type=button]').click(function() {
@@ -59,18 +60,19 @@
       $("#about").click(function (e) {
 
         $("#abs").html('We strive to be appropriate to the space and our users, and create experiences that go beyond screens, enabling people to engage with their environment and each other. Our first project <a href="https://www.youtube.com/watch?v=uZNmJ1ahFVM" target="_blank">Shadowing</a>, was nominated for a <a href="https://designmuseum.org/exhibitions/designs-of-the-year-2015"target="_blank">Design of the Year award</a>, and we are currently working on new objects and experiences.<p>');
-         $.backstretch("images/black.png",{fade:240});
+         $.backstretch({show:1});
       });
 
       $("#shadowing").click(function (e) {
 
         $("#abs").text("Winner of Watersheds 2014 Playable City Award, Shadowing by Jonathan Chomko and Matthew Rosier gave memory to Bristol's city lights, enabling them to record and play back the shadows of those who passed underneath. Over six weeks in Autumn 2014, Bristol residents and visitors hunted out the clandestine locations of eight augmented street lights, and were playing, dancing and shaping their shadows in some of the unexpected and lesser-travelled streets and pathways of Bristol. ");
-        $.backstretch("images/image2.JPG",{fade:240});
+       // $.backstretch("images/heart-web.jpg",{fade:240});
+       $.show(1);
       });
       
       $("#hok").click(function (e) {
         $("#abs").text('Heart of a King is a prototype visitor experience created for Historic Royal Palaces, guiding visitors on the path that Charles the 1st walked before his execution.');
-        $.backstretch("images/heart1.JPG",{fade:240});
+        $.backstretch(img3,{fade:240});
       });
 
       $("#story").click(function (e) {
@@ -89,6 +91,17 @@
         $.backstretch("images/lille2.jpg",{fade:240});
         // $("#toggle").csss("text-decoration", "line-through");
       });
+
+
+    $.backstretch([
+      "images/black.png",
+      "images/heart-web.jpg",
+      "images/shadowing-web.jpg",
+      "images/story-web.jpg",
+      "images/colors-web.jpg",
+      "images/lille-web.jpg",
+    ], {duration: 100000000000, fade: 240, paused: true});
+
 </script>
 
 <!-- <a class = "project_link" href="/project.html">Project One</a>
