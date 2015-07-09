@@ -14,10 +14,8 @@ html{
 	  -moz-background-size: cover !important;
 	  -o-background-size: cover !important; 
 	  background-size: cover !important;
-
-	
-	
 }
+
 .shadowingbg{
 	background-size: cover;
 	background: url(../images/shadowing-web.jpg) no-repeat center center fixed !important ;
@@ -75,6 +73,7 @@ html{
 
 
 
+
 @font-face {
 font-family: 'Atlas Grotesk Web';
 src: url('AtlasGrotesk-Regular-Web.eot');
@@ -103,36 +102,57 @@ ul{
 	font-family: 'Atlas Grotesk Web', sans-serif;
 }
 
-.about_text{
+
+.text_frame{
 	
 	background:transparent;
 	overflow:hidden;
-    margin:20px;
+    /*margin:20px;*/
 	display: inline-block;
 	height:auto;
-	max-width: 90%;
-	max-width: 850px;
-}
-
-.about_text span{
-
-	/*display: inline-block;*/
-	/*background-color: white;*/
-	/*font-variant: light;*/
 	color:white;
-	opacity: 1;
-	
+	margin:20px;
 }
 
-.summary_text{
+.text{
 
 	background:transparent;
+	overflow:hidden;
+    /*margin:20px;*/
+	display: inline-block;
+	height:auto;
+	
+   
+	display: inline-block;
+	max-width: 90%;
+	max-width: 850px;
 	overflow:hidden;
     display: inline-block;
 	height:auto;
 	font-size: 14pt;
+
+}
+
+.header_text{
+	font-size: 30px;
+
+}
+
+.description_text{
+	/*color:white;*/
+	background:transparent;
+	overflow:hidden;
+    /*margin:20px;*/
+	display: inline-block;
+	height:auto;
+
 	max-width: 90%;
 	max-width: 850px;
+	overflow:hidden;
+    display: inline-block;
+	height:auto;
+	font-size: 14pt;
+
 }
 
 
@@ -144,10 +164,10 @@ ul{
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	margin:0px;
+	margin-left:20px;
 	padding-bottom: 0px;
-	padding:20px;
-
+	padding:0px;
+	font-size: 14pt;
 }
 
 .toggle{
@@ -166,31 +186,12 @@ ul{
 }
 
 .active { 
-	color:white;
 	opacity: 1.0;
-	/*text-decoration: line-through;*/
 }
 
-
-/*.active {
-    position: relative;
-}
-.active::after {
-    border-bottom: 5px solid red;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 50%;
-}
-*/
 .summary_text span{
-
-	/*display: inline-block;*/
-	/*background-color: white;*/
 	font-size: 14pt;
 	opacity: 1;
-
 }
 
 .project_title{
@@ -222,10 +223,6 @@ body {
    
 }
 
-h1 {
-    color: navy;
-    margin-left: 20px;
-}
 
 a{
 	color: gray;
@@ -235,48 +232,61 @@ a{
 /*if less than 960 ie a phone*/
 @media (max-device-width:960px){
 
-	.about_text{
 
-		background:transparent;
-		overflow:hidden;
-	    margin: 20px;
-		display: inline-block;
-		height:auto;
-		font-size: 20pt;
-		max-width: 100%;
-		max-width: 750px;
-
-	}
-
-	.summary_text{
-
-		background:transparent;
-		overflow:hidden;
-	    display: inline-block;
-		height:auto;
-		font-size: 20pt;
-		max-width: 80%;
-		max-width: 750px;
-}
-	.summary_text span{
-	font-size: 20pt;
-	opacity: 1;
 	
-	}
-
 	.toggle{
 		display: inline-block;
 		border: none;
 		color: white;
 		cursor: pointer;
 		background-color: transparent;
-		/*text-decoration: underline;*/
 		outline: none;
-		font-size: 20pt;
 		opacity: 0.6;
+		font-size: 40px;
 	}
 
+
+	.text_frame{
+		
+		background:transparent;
+		overflow:hidden;
+	    /*margin:20px;*/
+		display: inline-block;
+		height:auto;
+		color:white;
+		margin:20px;
+	}
+
+	.text{
+
+		background:transparent;
+		overflow:hidden;
+	    /*margin:20px;*/
+		display: inline-block;
+		height:auto;
+		
+	   
+		display: inline-block;
+		max-width: 90%;
+		max-width: 850px;
+		overflow:hidden;
+	    display: inline-block;
+		height:auto;
+		font-size: 20pt;
+
+	}
+
+
+	.active { 
+	color:white;
+	opacity: 1.0;
+	/*text-decoration: line-through;*/
+	}
+
+
 }
+
+
 
 /*greater than a 960*/
 @media (min-device-width:960px){
@@ -296,46 +306,4 @@ a{
 
 }
 
-	
-	
 
-/*	.about_text{
-		
-		background:transparent;
-		overflow:hidden;
-	    margin:20px;
-		display: inline-block;
-		height:auto;
-		
-		font-size: 18pt;
-		max-width: 80%;
-		max-width: 750px;
-	}
-
-	.about_text p{
-		
-		display: inline-block;
-		background-color: white;
-		opacity: 0.7;
-
-	}
-
-	.project_title{
-		background-color: green;
-
-	}
-
-	.project_link{
-		background-color: pink;
-	}
-
-	body {
-	   
-	}
-
-	h1 {
-	    color: navy;
-	    margin-left: 20px;
-	}*/
-
-}

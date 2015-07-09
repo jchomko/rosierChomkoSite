@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html id = "base" class ="graybg">
-
-
+<header>
+<meta name="viewport" content="width=device-width, minimal-ui">
+</header>
 
 <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
 <link rel="stylesheet" type="text/css" href="css/theme.css">
@@ -9,37 +10,35 @@
 
 <body >
    
+<div class= "text_frame"> 
+	<div class = "text">
+    Chomko & Rosier is a design studio creating interesting public projects with technology. 
+    Contact us <a href="mailto:info@chomkorosier.com">here</a> 
+    </div>	
+    <p>
+  <div class = "text" id = "description_text">
+    Founded by Matthew Rosier and Jonathan Chomko, the studio focuses on non-screen-based interactive work. We follow a site-specific and user-centred design process, often incorporating new technology. Our work has been recognized by the London Design Museum, and has been exhibited at the Sydney Opera House, Mobile Museum Hong Kong, Perugia Journalism Festival, and Nuit Blanche Montreal. <p> We're interested in discussing comissions for non-screen based interactive work, and are available for consulting and workshops. 
+ </div>
 
+<br>
 
-<div class= "about_text"> 
-	
-	<span  class = "summary_text" >Chomko & Rosier is a design studio creating interesting public projects with technology. Contact us <a href="mailto:info@chomkorosier.com">here</a> </span>
-	<p>
-  
-  <div class = "summary_text">
-		<span class="abs" id="abs"> 
-      Founded by Matthew Rosier and Jonathan Chomko, the studio focuses on non-screen-based interactive work. We follow a site-specific and user-centred design process, often incorporating new technology. Our work has been recognized by the London Design Museum, and has been exhibited at the Sydney Opera House, Mobile Museum Hong Kong, Perugia Journalism Festival, and Nuit Blanche Montreal. <br> We're interested in discussing comissions for non-screen based interactive work, and are available for consulting and workshops.
-    </span>
+  <ul class = "text toggle_frame">
+  <br>
+  <input class="toggle active"  type="button" id="about" value="About" />
+  <br>
+  <input class="toggle" type="button" id="hok" value="Heart of a King" />
+  <br>
+  <input class="toggle" type="button" id="shadowing" value="Shadowing" />
+  <br>
+  <input class="toggle" type="button" id="story" value="The Story Dispenser" />
+  <br>
+  <input class="toggle" type="button" id="machine" value="Colors News Machine" />
+  <br>
+  <input class="toggle" type="button" id="lille" value="Lille" />
+  </ul>
+
 </div>
 
-</div>
-<br>
-
-<!-- <div class = "toggle_frame"> -->
-<ul class = "toggle_frame">
-<br>
-<input class="toggle active"  type="button" id="about" value="About" />
-<br>
-<input class="toggle" type="button" id="hok" value="Heart of a King" />
-<br>
-<input class="toggle" type="button" id="shadowing" value="Shadowing" />
-<br>
-<input class="toggle" type="button" id="story" value="The Story Dispenser" />
-<br>
-<input class="toggle" type="button" id="machine" value="Colors News Machine" />
-<br>
-<input class="toggle" type="button" id="lille" value="Lille" />
-</ul>
 <!-- </div> -->
 
 
@@ -66,21 +65,19 @@
            $('<img/>')[0].src = this; 
       });
       
-    // strikthrough to indicate selected
+      // highligt to indicate selected
      $('input[type=button]').click(function() {
          
         // $('#base').removeClass("opaque");
          $('input[type=button]').removeClass('active');
          $(this).addClass('active');
-
-        
-
       });
 
 
+      //Each button hardcoded text
       $("#about").click(function (e) {
         e.preventDefault();
-        $("#abs").html("Founded by Matthew Rosier and Jonathan Chomko, the studio focuses on non-screen-based interactive work. We follow a site-specific and user-centred design process, often incorporating new technology. Our work has been recognized by the London Design Museum, and has been exhibited at the Sydney Opera House, Mobile Museum Hong Kong, Perugia Journalism Festival, and Nuit Blanche Montreal. <br> We're interested in discussing comissions for non-screen based interactive work, and are available for consulting and workshops. ");
+        $("#description_text").html("Founded by Matthew Rosier and Jonathan Chomko, the studio focuses on non-screen-based interactive work. We follow a site-specific and user-centred design process, often incorporating new technology. Our work has been recognized by the London Design Museum, and has been exhibited at the Sydney Opera House, Mobile Museum Hong Kong, Perugia Journalism Festival, and Nuit Blanche Montreal. <br> We're interested in discussing comissions for non-screen based interactive work, and are available for consulting and workshops. ").css("color","white");
          // $.backstretch(images[0],{fade:750,duration:4000});
          // $('#base').removeClass("opaque");
 
@@ -90,13 +87,13 @@
 
      $("#hok").click(function (e) {
         e.preventDefault();
-        $("#abs").html("Heart of a King is a prototype visitor experience created for Historic Royal Palaces in London. The wooden heart is a 'totem' that guides visitors on the path of the Charles the First's final walk in St. James' Park before his execution. <br> The heart creates a haptic heartbeat that increases in strength when pointing to Charles' path, combining navigation systems such as GPS and compass to create an intimate experience of the story. Along the way, signage provides historical anecdotes to give context to changes in heartbeat frequency as felt by the user");
+        $("#description_text").html("Heart of a King is a prototype visitor experience created for Historic Royal Palaces in London. A wooden heart totem guides visitors on the path of the Charles the First's final walk in St. James' Park before his execution. <p> The heart creates a haptic heartbeat that increases in strength when pointing to Charles' path, combining navigation systems such as GPS and compass to create an intimate experience of the story. Along the way, signage provides historical anecdotes to give context to changes in heartbeat frequency as felt by the user").css("color","white");
          $('#base').removeClass().addClass('heartbg');//.addClass('opaque');;.addClass('opaque');;
       });
 
       $("#shadowing").click(function (e) {
         e.preventDefault();
-        $("#abs").html("Winner of Watersheds 2014 Playable City Award, Shadowing gave memory to Bristol's city lights, enabling them to record and play back the shadows of those who passed underneath. Over six weeks in Autumn 2014, Bristol residents and visitors hunted out the clandestine locations of eight augmented street lights, and were playing, dancing and shaping their shadows in some of the unexpected and lesser-travelled streets and pathways of Bristol. <p>Shadowing is now on tour, more information can be found here" );
+        $("#description_text").html("Winner of Watersheds 2014 Playable City Award, Shadowing gave memory to Bristol's city lights, enabling them to record and play back the shadows of those who passed underneath. Over six weeks in Autumn 2014, Bristol residents and visitors hunted out the clandestine locations of eight augmented street lights, and were playing, dancing and shaping their shadows in some of the unexpected and lesser-travelled streets and pathways of Bristol. <p>Shadowing is now on tour, more information can be found here" ).css("color","white");;
          $('#base').removeClass().addClass('shadowingbg');//.addClass('opaque');;.addClass('opaque');;
 
       });
@@ -105,22 +102,21 @@
 
       $("#story").click(function (e) {
         e.preventDefault();
-        $("#abs").html('The Story Dispenser allows users to anonymously print messages to public space, and creates an online forum for anonymous response. Only one person will read each story, though, as a single print is made and distributed. The project observes how people interact with a machine that enables anonymous statements in the knowledge that they would be printed and read by only one other. <p> The Story Dispenser has been prototyped in Treviso, Italy');
+        $("#description_text").html('The Story Dispenser allows users to anonymously print messages to public space, and creates an online forum for anonymous response. Only one person will read each story, though, as a single print is made and distributed. The project observes how people interact with a machine that enables anonymous statements in the knowledge that they would be printed and read by only one other. <p> The Story Dispenser was a temporary installation in Treviso, Italy').css("color","white");
          $('#base').removeClass().addClass('storybg');//.addClass('opaque');;
 
       });
       
       $("#machine").click(function (e) {
         e.preventDefault();
-        $("#abs").html('Designed and built for the launch of COLORS #86 - Making the News, the COLORS News Machine churns your tweets through different media filters and into print, simulating the contemporary 24-hour news cycle. Tweet a headline to @colorsmachine and see what happens; after Italian news hoaxer Tommaso De Benedetti tweeted the (fake) death of Syrian President Bashar al-Assad in 2012, crude oil prices rose by US $1.17 on the New York Mercantile Exchange. <p> The News Machine was first presented at the Perugia Journalism Festival in 2013, and toured to the Sydney Opera House in 2014. <p> Video <br> Press');
+        $("#description_text").html('Designed and built for the launch of COLORS #86 - Making the News, the COLORS News Machine churns your tweets through different media filters and into print, simulating the contemporary 24-hour news cycle. Tweet a headline to @colorsmachine and see what happens; after Italian news hoaxer Tommaso De Benedetti tweeted the (fake) death of Syrian President Bashar al-Assad in 2012, crude oil prices rose by US $1.17 on the New York Mercantile Exchange. <p> The News Machine was first presented at the Perugia Journalism Festival in 2013, and toured to the Sydney Opera House in 2014. <p> Video <br> Press').css("color","white");
          $('#base').removeClass().addClass('colorsbg');//.addClass('opaque');;.addClass('opaque');;
-
+         $('#')
       });
 
        $("#lille").click(function (e) {
         e.preventDefault();
-        $("#abs").text('Lille Design for Change was a short-listed proposal created over a five day workshop, competing schools/institutions were introduced to the three topics of the brief; re-inventing forgotten urban spaces, new modes of consumption and universal access to public services, as well as several sites across the city that had been earmarked for potential projects.');
-         $('#base').removeClass().addClass('lillebg');
+        $("#description_text").text('Lille Design for Change was a short-listed proposal created over a five day workshop, competing schools/institutions were introduced to the three topics of the brief; re-inventing forgotten urban spaces, new modes of consumption and universal access to public services, as well as several sites across the city that had been earmarked for potential projects.').css("color","white");
          $('#base').removeClass().addClass('lillebg');
          
          //.addClass('opaque');;.addClass('opaque');;
