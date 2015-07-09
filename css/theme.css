@@ -134,7 +134,7 @@ ul{
 
 
 .toggle_frame{
-	font-family: 'Atlas Grotesk Web', sans-serif;
+	/*font-family: 'Atlas Grotesk Web', sans-serif;*/
 	text-align: left;
 	background:transparent;
 	position: absolute;
@@ -147,6 +147,8 @@ ul{
 }
 
 .toggle{
+		font-family: 'Atlas Grotesk Web', sans-serif;
+
 	display: inline-block;
 
 	border: none;
@@ -156,7 +158,7 @@ ul{
 	background-color: transparent;
 	/*text-decoration: underline;*/
 	outline: none;
-	font-size: 14pt;
+	font-size: 13pt;
 	opacity: 0.6;
 }
 
@@ -224,7 +226,6 @@ h1 {
 
 a{
 	color: gray;
-
 }
 
 
@@ -240,25 +241,25 @@ a{
 		height:auto;
 		
 		font-size: 30pt;
-		max-width: 80%;
+		max-width: 100%;
 		max-width: 750px;
 	}
 
 	.summary_text{
 
-	background:transparent;
-	overflow:hidden;
-    display: inline-block;
-	height:auto;
-	font-size: 40pt;
-	max-width: 80%;
-	max-width: 750px;
+		background:transparent;
+		overflow:hidden;
+	    display: inline-block;
+		height:auto;
+		font-size: 30pt;
+		max-width: 80%;
+		max-width: 750px;
 }
 	.summary_text span{
 
 	/*display: inline-block;*/
 	/*background-color: white;*/
-	font-size: 40pt;
+	font-size: 30pt;
 	opacity: 1;
 	
 	}
@@ -271,7 +272,7 @@ a{
 		background-color: transparent;
 		/*text-decoration: underline;*/
 		outline: none;
-		font-size: 40pt;
+		font-size: 30pt;
 		opacity: 0.6;
 	}
 
