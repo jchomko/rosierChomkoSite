@@ -232,8 +232,19 @@ a{
 /*if less than 960 ie a phone*/
 @media (max-device-width:960px){
 
-
-	
+	.toggle_frame{
+		/*font-family: 'Atlas Grotesk Web', sans-serif;*/
+		text-align: left;
+		background:transparent;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin-left:20px;
+		padding-bottom: 0px;
+		padding:0px;
+		font-size: 14pt;
+	}
+		
 	.toggle{
 		display: inline-block;
 		border: none;
@@ -242,7 +253,7 @@ a{
 		background-color: transparent;
 		outline: none;
 		opacity: 0.6;
-		font-size: 40px;
+		font-size: 14px;
 	}
 
 
@@ -254,7 +265,7 @@ a{
 		display: inline-block;
 		height:auto;
 		color:white;
-		margin:20px;
+		margin:14px;
 	}
 
 	.text{
@@ -265,14 +276,13 @@ a{
 		display: inline-block;
 		height:auto;
 		
-	   
 		display: inline-block;
-		max-width: 90%;
-		max-width: 850px;
+		max-width: 100%;
+		/*max-width: 850px;*/
 		overflow:hidden;
 	    display: inline-block;
 		height:auto;
-		font-size: 20pt;
+		font-size: 14px;
 
 	}
 
