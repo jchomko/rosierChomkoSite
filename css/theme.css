@@ -47,13 +47,14 @@ html{
 }
 
 .lillebg{
+
 	background-size: cover;
 	background: url(../images/lille-web.jpg) no-repeat center center fixed !important ;
 	-webkit-background-size: cover !important;
 	  -moz-background-size: cover !important;
 	  -o-background-size: cover !important; 
 	  background-size: cover !important;
-	
+	/*background: rgba(70, 72, 82, 0.7)*/
 }
 
 /*html{*/
