@@ -1,7 +1,7 @@
 
 html{
 	
-
+	/*height: calc(100% + 72px);*/*/
 }
 .graybg{
 	background: #1C1C1C;
@@ -55,8 +55,20 @@ html{
 	  -o-background-size: cover !important; 
 	  background-size: cover !important;
 	/*background: rgba(70, 72, 82, 0.7)*/
+	/*background: rgba(0,0,0, 0.5);*/
 }
 
+
+.tint {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.2); /*can be anything, of course*/
+}
 /*html{*/
 
 	/*background: url(images/image2.JPG) no-repeat center center fixed;
@@ -295,6 +307,18 @@ a{
 	/*text-decoration: line-through;*/
 	}
 
+	.tint {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.34); /*can be anything, of course*/
+}
+
+
 
 }
 
@@ -317,5 +341,7 @@ a{
 
 
 }
+
+
 
 

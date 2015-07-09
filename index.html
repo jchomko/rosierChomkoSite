@@ -9,10 +9,15 @@
 <!-- <link rel="stylesheet" type="text/css" href="1507-FUTDRF.css"> -->
 
 <body >
+
+<div class = "tint"> 
+
+</div>
    
 <div class= "text_frame"> 
 	<div class = "text">
-    Chomko & Rosier aims to create interesting design projects that utilise technology, making and urban intervention. We offer consultancy, workshops and design through to fabrication and delivery. Contact us <a href="mailto:info@chomkorosier.com">here</a>
+    Chomko & Rosier aims to create interesting design projects that utilise technology, making and urban intervention. We offer consultancy, workshops and design through to fabrication and delivery. Contact us at info@chomkorosier.com.
+    <!-- <a href="mailto:info@chomkorosier.com" target="top" >here</a> -->
     </div>	
     <p>
   <div class = "text" id = "description_text">
@@ -61,7 +66,6 @@
 <script>
     
     var images = [
-      'images/black.png',
       'images/heart-web.jpg',
       'images/shadowing-web.jpg',
       'images/story-web.jpg',
@@ -84,7 +88,8 @@
       //Each button hardcoded text
       $("#about").click(function (e) {
         e.preventDefault();
-        $("#description_text").html("The studio focuses on non-screen-based interactive work. We follow a site-specific and user-centred design process, often incorporating new technology. Our work has been recognized by the London Design Museum, and has been exhibited at the Sydney Opera House, Mobile Museum Hong Kong, Perugia Journalism Festival, and Nuit Blanche Montreal. <br> We're interested in discussing comissions for non-screen based interactive work, and are available for consulting and workshops. ").css("color","white");
+        $("#description_text").html("The studio focuses on non-screen-based interactive work. We follow a site-specific and user-centred design process, often incorporating new technology. Our work has been recognized by the London Design Museum, and has been exhibited at the Sydney Opera House, Mobile Museum Hong Kong, Perugia Journalism Festival, and Nuit Blanche Montreal. <br> We're interested in discussing comissions for non-screen based interactive work, and are available for consulting and workshops. ")
+        $("#text_frame").css("color","white");
          // $.backstretch(images[0],{fade:750,duration:4000});
          // $('#base').removeClass("opaque");
 
@@ -124,7 +129,7 @@
       $("#machine").click(function (e) {
         e.preventDefault();
 
-        $("#description_text").html('Designed and built for the launch of COLORS #86 - Making the News, the COLORS News Machine churns your tweets through different media filters and into print, simulating the contemporary 24-hour news cycle. Tweet a headline to @colorsmachine and see what happens; after Italian news hoaxer Tommaso De Benedetti tweeted the (fake) death of Syrian President Bashar al-Assad in 2012, crude oil prices rose by US $1.17 on the New York Mercantile Exchange.').css("color","white");
+        $("#description_text").html('Designed and built for the launch of COLORS #86 - Making the News, the COLORS News Machine churns your tweets through different media filters and into print, simulating the contemporary 24-hour news cycle. Tweet a headline to @colorsmachine and see what happens; after Italian news hoaxer Tommaso De Benedetti tweeted the (fake) death of Syrian President Bashar al-Assad in 2012, crude oil prices rose by US $1.17 on the New York Mercantile Exchange.');
          $('#base').removeClass().addClass('colorsbg');//.addClass('opaque');;.addClass('opaque');;
          $('#')
 
@@ -134,6 +139,7 @@
         e.preventDefault();
 
         $("#description_text").text('The city of Lille engaged our team to re-imagine economically challenged areas of Lille around the themese of New Modes Of Consumption, Forgotten Spaces and Universal Access To Public Services. We carried out workshops, intensive research and interviews to inform our designs. The final projects were presented to politicians, designers and industry leaders in Lille and he city is now exploring means to impliment some of these ideas. (With Fiona OLeary, Caitlin Morris and Alejandro Sajgalik)').css("color","white");
+
 
          $('#base').removeClass().addClass('lillebg');
          
