@@ -20,7 +20,16 @@
     Founded by Matthew Rosier and Jonathan Chomko, the studio focuses on non-screen-based interactive work. We follow a site-specific and user-centred design process, often incorporating new technology. Our work has been recognized by the London Design Museum, and has been exhibited at the Sydney Opera House, Mobile Museum Hong Kong, Perugia Journalism Festival, and Nuit Blanche Montreal. <p> We're interested in discussing comissions for non-screen based interactive work, and are available for consulting and workshops. 
  </div>
 
-<br>
+<div class= "about_text"> 
+	
+	<span  class = "summary_text" >Chomko & Rosier aims to create interesting design projects that utilise technology, making and urban intervention. We offer consultancy, workshops and design through to fabrication and delivery. Contact us <a href="mailto:info@chomkorosier.com">here</a> </span>
+	<p>
+  
+  <div class = "summary_text">
+		<span class="abs" id="abs">We strive to be appropriate to the space and our users, and create experiences that go beyond screens, enabling people to engage with their environment and each other. Our first project <a href="https://www.youtube.com/watch?v=uZNmJ1ahFVM" target="_blank">Shadowing</a>, was nominated for a <a href="https://designmuseum.org/exhibitions/designs-of-the-year-2015"target="_blank">Design of the Year award</a>, and we are currently working on new objects and experiences.<p>
+    </span>
+</div>
+
 
   <ul class = "text toggle_frame">
   <br>
@@ -93,30 +102,40 @@
 
       $("#shadowing").click(function (e) {
         e.preventDefault();
-        $("#description_text").html("Winner of Watersheds 2014 Playable City Award, Shadowing gave memory to Bristol's city lights, enabling them to record and play back the shadows of those who passed underneath. Over six weeks in Autumn 2014, Bristol residents and visitors hunted out the clandestine locations of eight augmented street lights, and were playing, dancing and shaping their shadows in some of the unexpected and lesser-travelled streets and pathways of Bristol. <p>Shadowing is now on tour, more information can be found here" ).css("color","white");;
-         $('#base').removeClass().addClass('shadowingbg');//.addClass('opaque');;.addClass('opaque');;
+
+        $("#abs").text("Winner of Watersheds 2014 Playable City Award, Shadowing gave memory to Bristol's city lights, enabling them to record and play back the shadows of those who passed underneath. Over six weeks in Autumn 2014, Bristol residents and visitors hunted out the clandestine locations of eight augmented street lights, and were playing, dancing and shaping their shadows in some of the unexpected and lesser-travelled streets and pathways of Bristol. ");
+         $('#base').removeClass().addClass('shadowingbg');
 
       });
       
-     
+      $("#hok").click(function (e) {
+        e.preventDefault();
+        $("#abs").text('Heart of a King is a prototype visitor experience created for Historic Royal Palaces, guiding visitors on the path that Charles the 1st walked before his execution. Visitors are guided by a programable heart beat, beating strongest in the direction they must walk. The experience ends when the heart stops beating outside Banqueting House, Whitehall where Charles was executed in 1649.');
+         $('#base').removeClass().addClass('heartbg');
+      
+      });
 
       $("#story").click(function (e) {
         e.preventDefault();
-        $("#description_text").html('The Story Dispenser allows users to anonymously print messages to public space, and creates an online forum for anonymous response. Only one person will read each story, though, as a single print is made and distributed. The project observes how people interact with a machine that enables anonymous statements in the knowledge that they would be printed and read by only one other. <p> The Story Dispenser was a temporary installation in Treviso, Italy').css("color","white");
-         $('#base').removeClass().addClass('storybg');//.addClass('opaque');;
+        $("#abs").text('Situated within Fabrica, Italy, this project aimed to observe how people used a machine that enabled people to anonymously post snippets of stories/personal ramblings in the knowledge that they would be printed and read by only one other. This was a prototype that is now being devloped to be deployed within the urban environment.');
+         $('#base').removeClass().addClass('storybg');
+
 
       });
       
       $("#machine").click(function (e) {
         e.preventDefault();
-        $("#description_text").html('Designed and built for the launch of COLORS #86 - Making the News, the COLORS News Machine churns your tweets through different media filters and into print, simulating the contemporary 24-hour news cycle. Tweet a headline to @colorsmachine and see what happens; after Italian news hoaxer Tommaso De Benedetti tweeted the (fake) death of Syrian President Bashar al-Assad in 2012, crude oil prices rose by US $1.17 on the New York Mercantile Exchange. <p> The News Machine was first presented at the Perugia Journalism Festival in 2013, and toured to the Sydney Opera House in 2014. <p> Video <br> Press').css("color","white");
-         $('#base').removeClass().addClass('colorsbg');//.addClass('opaque');;.addClass('opaque');;
-         $('#')
+        $("#abs").text('Designed and built for the launch of COLORS #86 - Making the News, the COLORS News Machine churns your tweets through different media filters and into print, simulating the contemporary 24-hour news cycle. Tweet a headline to @colorsmachine and see what happens; after Italian news hoaxer Tommaso De Benedetti tweeted the (fake) death of Syrian President Bashar al-Assad in 2012, crude oil prices rose by US $1.17 on the New York Mercantile Exchange.');
+         $('#base').removeClass().addClass('colorsbg');
+
+
       });
 
        $("#lille").click(function (e) {
         e.preventDefault();
-        $("#description_text").text('Lille Design for Change was a short-listed proposal created over a five day workshop, competing schools/institutions were introduced to the three topics of the brief; re-inventing forgotten urban spaces, new modes of consumption and universal access to public services, as well as several sites across the city that had been earmarked for potential projects.').css("color","white");
+
+        $("#abs").text('The city of Lille engaged our team to re-imagine economically challenged areas of Lille around the themese of New Modes Of Consumption, Forgotten Spaces and Universal Access To Public Services. We carried out workshops, intensive research and interviews to inform our designs. The final projects were presented to politicians, designers and industry leaders in Lille and he city is now exploring means to impliment some of these ideas. (With Fiona OLeary, Caitlin Morris and Alejandro Sajgalik)');
+
          $('#base').removeClass().addClass('lillebg');
          
          //.addClass('opaque');;.addClass('opaque');;
@@ -136,7 +155,6 @@
 </script>
 
 <!-- <a class = "project_link" href="/project.html">Project One</a>
-<!-- <img src="images/image1.jpg" alt="face" style="width:500px;height:relative;"> -->
 
 </body>
 </html>
