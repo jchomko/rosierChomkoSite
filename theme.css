@@ -1,0 +1,278 @@
+html{
+
+	/*background: url(images/image2.JPG) no-repeat center center fixed;
+	background-size: cover;
+	*/
+	background: #1C1C1C;
+
+}
+
+@font-face {
+	font-family: 'Atlas Grotesk Web';
+	src: url('AtlasGrotesk-Regular-Web.eot');
+	src: url('AtlasGrotesk-Regular-Web.eot?#iefix') format('embedded-opentype'),
+	url('AtlasGrotesk-Regular-Web.woff') format('woff'),
+	url('AtlasGrotesk-Regular-Web.ttf') format('truetype'),
+	url('AtlasGrotesk-Regular-Web.svg#AtlasGrotesk-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+.AtlasGrotesk-Regular-Web {
+font-family: 'Atlas Grotesk Web';
+font-weight: 400;
+font-style: normal;
+font-stretch: normal;
+}
+
+body {
+	background-size: cover;
+ /*background-color:#111111;   */
+}
+
+div{
+	font-family: 'Atlas Grotesk Web', serif;
+	background-color: white;
+}
+
+.about_text{
+	
+	background:transparent;
+	overflow:hidden;
+    margin:20px;
+	display: inline-block;
+	height:auto;
+	max-width: 80%;
+	max-width: 750px;
+	
+
+}
+
+.about_text span{
+
+	/*display: inline-block;*/
+	/*background-color: white;*/
+	font-variant: light;
+	color:white;
+	opacity: 1;
+	
+}
+
+.summary_text{
+
+	background:transparent;
+	overflow:hidden;
+    display: inline-block;
+	height:auto;
+	font-size: 14pt;
+	max-width: 80%;
+	max-width: 750px;
+}
+
+
+
+.toggle_frame{
+	text-align: left;
+	background:transparent;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin:0px;
+	padding-bottom: 0px;
+	padding:20px;
+
+}
+
+.toggle{
+	display: inline-block;
+
+	border: none;
+	color: white;
+	cursor: pointer;
+	
+	background-color: transparent;
+	/*text-decoration: underline;*/
+	outline: none;
+	font-size: 14pt;
+	opacity: 0.6;
+}
+
+.active { 
+	color:white;
+	opacity: 1.0;
+	/*text-decoration: line-through;*/
+}
+
+
+/*.active {
+    position: relative;
+}
+.active::after {
+    border-bottom: 5px solid red;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+*/
+.summary_text span{
+
+	/*display: inline-block;*/
+	/*background-color: white;*/
+	font-size: 14pt;
+	opacity: 1;
+
+}
+
+.project_title{
+	background-color: green;
+
+}
+
+.project_link{
+	background-color: pink;
+}
+
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: auto;
+  height: 100%;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body {
+   
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+a{
+	color: gray;
+
+}
+
+
+/*if less than 960 ie a phone*/
+@media (max-device-width:960px){
+
+	.about_text{
+
+		background:transparent;
+		overflow:hidden;
+	    margin:20px;
+		display: inline-block;
+		height:auto;
+		
+		font-size: 30pt;
+		max-width: 80%;
+		max-width: 750px;
+	}
+
+	.summary_text{
+
+	background:transparent;
+	overflow:hidden;
+    display: inline-block;
+	height:auto;
+	font-size: 40pt;
+	max-width: 80%;
+	max-width: 750px;
+}
+	.summary_text span{
+
+	/*display: inline-block;*/
+	/*background-color: white;*/
+	font-size: 40pt;
+	opacity: 1;
+	
+	}
+
+	.toggle{
+		display: inline-block;
+		border: none;
+		color: white;
+		cursor: pointer;
+		background-color: transparent;
+		/*text-decoration: underline;*/
+		outline: none;
+		font-size: 40pt;
+		opacity: 0.6;
+	}
+
+}
+
+/*greater than a 960*/
+@media (min-device-width:960px){
+	
+	.about_text{
+		background:transparent;
+		overflow:hidden;
+	    margin:20px;
+		display: inline-block;
+		height:auto;
+		font-size: 16pt;
+		max-width: 80%;
+		max-width: 750px;
+	}
+
+
+
+}
+
+	
+	
+
+/*	.about_text{
+		
+		background:transparent;
+		overflow:hidden;
+	    margin:20px;
+		display: inline-block;
+		height:auto;
+		
+		font-size: 18pt;
+		max-width: 80%;
+		max-width: 750px;
+	}
+
+	.about_text p{
+		
+		display: inline-block;
+		background-color: white;
+		opacity: 0.7;
+
+	}
+
+	.project_title{
+		background-color: green;
+
+	}
+
+	.project_link{
+		background-color: pink;
+	}
+
+	body {
+	   
+	}
+
+	h1 {
+	    color: navy;
+	    margin-left: 20px;
+	}*/
+
+}
